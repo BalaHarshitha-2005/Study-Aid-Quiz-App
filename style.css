@@ -1,0 +1,41 @@
+:root {
+    /* Use the Inter font linked in index.html */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar for better aesthetics */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #9ca3af; /* Gray-400 */
+    border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f3f4f6; /* Gray-100 */
+}
+
+/* Enhances the question card visually */
+.question-card {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+/* Provides a slight lift effect on options when hovered */
+.option-button {
+    transition: all 0.2s;
+}
+
+.option-button:not([disabled]):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06);
+}
+
+/* General button styling for focus and disabled states */
+button:focus:not([disabled]) {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px #ffffff, 0 0 0 5px #4f46e5; /* White ring, indigo ring */
+}
